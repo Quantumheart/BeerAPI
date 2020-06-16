@@ -1,3 +1,4 @@
+using System;
 using BeerAPI.Data;
 using BeerAPI.Models;
 using Microsoft.AspNetCore.Builder;
@@ -30,6 +31,8 @@ namespace BeerAPI
                 .AddEntityFrameworkStores<ApplicationDbContext>()
                 .AddDefaultTokenProviders();*/
             services.AddControllers();
+
+            services.AddScoped<IBeerRepo, BeerRepo>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

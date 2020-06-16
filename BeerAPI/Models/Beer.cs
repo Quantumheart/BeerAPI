@@ -15,6 +15,7 @@ namespace BeerAPI.Models
         public string BeerClass { get; set; }
         [MaxLength(500)]
         public string BeerDescription { get; set; }
+        [Column(TypeName = "decimal(18,2)")]
         public decimal Abv { get; set; }
         [ForeignKey("BreweryId")]
         public Brewery Brewer { get; set; }

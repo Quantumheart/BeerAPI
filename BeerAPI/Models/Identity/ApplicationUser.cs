@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations.Schema;
 using Microsoft.AspNetCore.Identity;
 
-namespace BeerAPI.Models
+namespace BeerAPI.Models.Identity
 {
     public class ApplicationUser 
     {

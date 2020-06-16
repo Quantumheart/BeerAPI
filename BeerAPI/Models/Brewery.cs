@@ -22,8 +22,7 @@ namespace BeerAPI.Models
         public string City { get; set; }
         [MaxLength(9)]
         public string ZipCode { get; set; }
-        [ForeignKey("BeerId")]
-        public List<Brewery> Beers { get; set; }
+        public List<Beer> Beers { get; set; }
         [Required]
         [MaxLength(50)]
         public string CreatedBy { get; set; }
