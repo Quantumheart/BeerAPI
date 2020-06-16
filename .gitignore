@@ -1,3 +1,14 @@
 bin/
 obj/
 /packages/
+/.idea/.gitignore
+/.idea/.idea.BeerAPI/.idea/dictionaries/codym.xml
+/.idea/.idea.BeerAPI/.idea/compiler.xml
+/.idea/.idea.BeerAPI/.idea/contentModel.xml
+/.idea/.idea.BeerAPI/.idea/encodings.xml
+/.idea/.idea.BeerAPI/.idea/indexLayout.xml
+/.idea/.idea.BeerAPI/.idea/modules.xml
+/.idea/.idea.BeerAPI/.idea/projectSettingsUpdater.xml
+/.idea/.idea.BeerAPI/riderModule.iml
+/.idea/.idea.BeerAPI/.idea/vagrant.xml
+/.idea/.idea.BeerAPI/.idea/vcs.xml
