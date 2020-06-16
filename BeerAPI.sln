@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeerAPI", "BeerAPI\BeerAPI.csproj", "{443E019A-4405-4E33-A37C-95E78756E324}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestBeerAPI", "TestBeerAPI\TestBeerAPI.csproj", "{12B3A011-2BAE-4678-905D-09AC670084F9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{443E019A-4405-4E33-A37C-95E78756E324}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{443E019A-4405-4E33-A37C-95E78756E324}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{443E019A-4405-4E33-A37C-95E78756E324}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12B3A011-2BAE-4678-905D-09AC670084F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12B3A011-2BAE-4678-905D-09AC670084F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12B3A011-2BAE-4678-905D-09AC670084F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12B3A011-2BAE-4678-905D-09AC670084F9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
