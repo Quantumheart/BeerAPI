@@ -1,10 +1,11 @@
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using BeerAPI.Models;
 
 namespace BeerAPI.Data
 {
     public interface IBeerRepo
     {
-        IEnumerable<Beer> GetAllBeers();
+        Task<List<Beer>> GetAllBeers();
     }
 }

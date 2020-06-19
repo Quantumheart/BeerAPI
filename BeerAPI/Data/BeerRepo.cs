@@ -1,6 +1,8 @@
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using BeerAPI.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace BeerAPI.Data
 {
@@ -13,9 +15,9 @@ namespace BeerAPI.Data
             _context = context;
         }
         
-        public IEnumerable<Beer> GetAllBeers()
+        public async Task<List<Beer>> GetAllBeers()
         {
-            return _context.Beers.ToList();
+            return await _context.Beers.ToListAsync();
         }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using BeerAPI.Data;
 using BeerAPI.Models;
 using Microsoft.AspNetCore.Mvc;
@@ -18,9 +19,9 @@ namespace BeerAPI.Controllers
         }
         
         [HttpGet]
-        public ActionResult GetAllBeers()
+        public async Task<IActionResult> GetAllBeers()
         {
-            var beers = _repository.GetAllBeers();
+            var beers = await _repository.GetAllBeers();
             return Ok(beers);
         }
     }
