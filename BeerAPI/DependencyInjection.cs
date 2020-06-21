@@ -13,7 +13,7 @@ namespace BeerAPI
     {
         public static void AddApplication(this IServiceCollection services)
         {
-
+            services.AddScoped<IApplicationDbContext>(provider => provider.GetService<ApplicationDbContext>());
             services.AddAutoMapper(typeof(AutoMapperProfiles));
             services.AddMediatR(Assembly.GetExecutingAssembly());
             /*services.AddIdentity<ApplicationUser, ApplicationRole>()
