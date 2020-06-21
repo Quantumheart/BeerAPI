@@ -5,10 +5,8 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace BeerAPI.Models
 {
-    public class Brewery
+    public class Brewery : BaseEntity
     {
-        [Key]
-        public int BreweryId { get; set; }
         [Required]
         [MaxLength(50)]
         public string BreweryName { get; set; }
@@ -22,6 +20,7 @@ namespace BeerAPI.Models
         public string City { get; set; }
         [MaxLength(9)]
         public string ZipCode { get; set; }
+        [ForeignKey("BeerId")]
         public List<Beer> Beers { get; set; }
         [Required]
         [MaxLength(50)]
