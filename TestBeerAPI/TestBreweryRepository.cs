@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 using BeerAPI.Data;
 using BeerAPI.Models;
 using Microsoft.EntityFrameworkCore;
@@ -26,7 +27,7 @@ namespace TestBeerAPI
 
                 var brewery1 = new Brewery()
                 {
-                    BreweryId = 1, CreatedBy = "Bob Vance", BreweryName = "Prairie Artisan Ales",
+                    Id = 1, CreatedBy = "Bob Vance", BreweryName = "Prairie Artisan Ales",
                     MasterBrewer = "Bob Vance", City = "OKC", CreatedDate = DateTime.Now, 
                 };
 
@@ -37,8 +38,18 @@ namespace TestBeerAPI
         }
 
         [Fact]
-        public void Test1()
+        public void GetBeers()
         {
+            using (var context = new ApplicationDbContext(ContextOptions))
+            {
+                context.Database.EnsureCreated();
+                context.Database.EnsureDeleted();
+                
+                var breweries =  context.Breweries.ToList();
+                
+                
+                
+            }
         }
     }
 }

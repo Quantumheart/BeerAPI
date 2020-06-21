@@ -1,11 +1,12 @@
-﻿using BeerAPI.Models;
+﻿using System.Threading.Tasks;
+using BeerAPI.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace BeerAPI.Data
 {
-    public class ApplicationDbContext : IdentityDbContext
+    public class ApplicationDbContext : IdentityDbContext, IApplicationDbContext
     {
         private readonly DbContextOptions<ApplicationDbContext> _options;
 
@@ -21,6 +22,10 @@ namespace BeerAPI.Data
 
         public DbSet<Beer> Beers { get; set; }
         public DbSet<Brewery> Breweries { get; set; }
+        public async Task<int> SaveChangesAsync()
+        {
+            return await base.SaveChangesAsync();   
+        }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

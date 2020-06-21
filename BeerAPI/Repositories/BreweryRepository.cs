@@ -23,7 +23,7 @@ namespace BeerAPI.Repositories
 
         public async Task<Brewery> GetBrewery(int id)
         {
-            return await _context.Breweries.FirstOrDefaultAsync(d => d.BreweryId == id);
+            return await _context.Breweries.FirstOrDefaultAsync(d => d.Id == id);
         }
 
         public async Task<bool> AddBrewery(Brewery brewery)
