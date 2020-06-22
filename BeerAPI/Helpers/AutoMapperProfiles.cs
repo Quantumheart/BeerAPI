@@ -7,8 +7,6 @@ namespace BeerAPI.Helpers
     {
         public AutoMapperProfiles()
         {
-            CreateMap<Brewery, DtoBrewery>();
-            CreateMap<Brewery, DtoBrewery>().ReverseMap();
             CreateMap<Beer, DtoBeer>();
             CreateMap<Beer, DtoBeer>().ReverseMap();
         }
