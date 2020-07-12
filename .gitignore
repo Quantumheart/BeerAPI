@@ -12,3 +12,5 @@ obj/
 /.idea/.idea.BeerAPI/riderModule.iml
 /.idea/.idea.BeerAPI/.idea/vagrant.xml
 /.idea/.idea.BeerAPI/.idea/vcs.xml
+/BeerAPI/Migrations
+/BeerAPI/appsettings.json
