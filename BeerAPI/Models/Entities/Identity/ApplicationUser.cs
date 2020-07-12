@@ -1,8 +1,6 @@
 ﻿using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations.Schema;
-using Microsoft.AspNetCore.Identity;
 
-namespace BeerAPI.Models.Identity
+namespace BeerAPI.Models.Entities.Identity
 {
     public class ApplicationUser 
     {

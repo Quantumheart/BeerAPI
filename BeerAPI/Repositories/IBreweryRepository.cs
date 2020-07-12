@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using BeerAPI.Models;
+using BeerAPI.Models.Entities;
 
 namespace BeerAPI.Repositories
 {

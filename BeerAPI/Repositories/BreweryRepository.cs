@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using BeerAPI.Data;
 using BeerAPI.Models;
+using BeerAPI.Models.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace BeerAPI.Repositories

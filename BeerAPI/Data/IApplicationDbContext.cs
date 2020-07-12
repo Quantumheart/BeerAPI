@@ -1,5 +1,6 @@
 ﻿using System.Threading.Tasks;
 using BeerAPI.Models;
+using BeerAPI.Models.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace BeerAPI.Data

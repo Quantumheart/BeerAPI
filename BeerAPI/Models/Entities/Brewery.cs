@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace BeerAPI.Models
+namespace BeerAPI.Models.Entities
 {
     public class Brewery : BaseEntity
     {

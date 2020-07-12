@@ -2,6 +2,7 @@ using System;
 using System.Linq;
 using BeerAPI.Data;
 using BeerAPI.Models;
+using BeerAPI.Models.Entities;
 using Microsoft.EntityFrameworkCore;
 using Xunit;
 
@@ -38,18 +39,13 @@ namespace TestBeerAPI
         }
 
         [Fact]
-        public void GetBeers()
+        public void GetBreweries()
         {
-            using (var context = new ApplicationDbContext(ContextOptions))
-            {
-                context.Database.EnsureCreated();
-                context.Database.EnsureDeleted();
+            using var context = new ApplicationDbContext(ContextOptions);
+            context.Database.EnsureCreated();
+            context.Database.EnsureDeleted();
                 
-                var breweries =  context.Breweries.ToList();
-                
-                
-                
-            }
+            var breweries =  context.Breweries.ToList();
         }
     }
 }
