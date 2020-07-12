@@ -1,13 +1,12 @@
-﻿using System.Collections;
-using System.Threading;
+﻿using System.Threading;
 using System.Threading.Tasks;
 using BeerAPI.Data;
 using BeerAPI.Models;
-using BeerAPI.Repositories;
+using BeerAPI.Models.Entities;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 
-namespace BeerAPI.Queries
+namespace BeerAPI.Queries.BreweryQueries
 {
     public class GetBreweryQuery : IRequest<Brewery>
     {

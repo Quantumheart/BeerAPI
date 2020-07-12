@@ -3,10 +3,11 @@ using System.Threading;
 using System.Threading.Tasks;
 using BeerAPI.Data;
 using BeerAPI.Models;
+using BeerAPI.Models.Entities;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 
-namespace BeerAPI.Queries
+namespace BeerAPI.Queries.BreweryQueries
 {
     public class GetAllBreweriesQuery : IRequest<IEnumerable<Brewery>>
     {
@@ -22,13 +23,8 @@ namespace BeerAPI.Queries
             public async Task<IEnumerable<Brewery>> Handle(GetAllBreweriesQuery query,
                 CancellationToken cancellationToken)
             {
-                var productList = await _context.Breweries.ToListAsync();
-                if (productList == null)
-                {
-                    return null;
-                }
-
-                return productList.AsReadOnly();
+                var productList = await _context.Breweries.ToListAsync(cancellationToken: cancellationToken).ConfigureAwait(false);
+                return productList?.AsReadOnly();
             }
         }
     }
