@@ -14,3 +14,4 @@ obj/
 /.idea/.idea.BeerAPI/.idea/vcs.xml
 /BeerAPI/Migrations
 /BeerAPI/appsettings.json
+/BeerAPI/appsettings.Development.json
