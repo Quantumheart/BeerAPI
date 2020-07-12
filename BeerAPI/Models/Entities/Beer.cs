@@ -5,10 +5,8 @@ using BeerAPI.Models.Entities;
 
 namespace BeerAPI.Models
 {
-    public class Beer
+    public class Beer : BaseEntity
     {
-        [Key]
-        public int BeerId { get; set; }
         [Required]
         [MaxLength(80)]
         public string BeerName { get; set; }
@@ -18,13 +16,15 @@ namespace BeerAPI.Models
         public string BeerDescription { get; set; }
         [Column(TypeName = "decimal(18,2)")]
         public decimal Abv { get; set; }
+        [Required]
         [ForeignKey("BreweryId")]
-        public Brewery Brewer { get; set; }
+        public int BreweryId { get; set; }
+        public virtual Brewery Brewer { get; set; }
         [Required]
         public string CreatedBy { get; set; }
         public DateTime CreatedDate { get; set; }
         public string ModifiedBy { get; set; }
-        public DateTime ModifiedDate { get; set; }
+        public DateTime? ModifiedDate { get; set; }
     }
 
     public class DtoBeer

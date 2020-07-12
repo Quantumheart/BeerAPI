@@ -19,6 +19,7 @@ namespace BeerAPI
             /*services.AddIdentity<ApplicationUser, ApplicationRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>()
                 .AddDefaultTokenProviders();*/
+            services.AddControllers().AddNewtonsoftJson();
             services.AddScoped<IBreweryRepository, BreweryRepository>();
             services.AddControllers();
         }

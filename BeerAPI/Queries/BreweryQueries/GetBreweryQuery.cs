@@ -12,7 +12,7 @@ namespace BeerAPI.Queries.BreweryQueries
     {
         public int Id { get; set; }
 
-        public class GetBreweryQueryHandler : IRequest<GetBreweryQuery>
+        public class GetBreweryQueryHandler : IRequestHandler<GetBreweryQuery, Brewery>
         {
             private readonly IApplicationDbContext _context;
 

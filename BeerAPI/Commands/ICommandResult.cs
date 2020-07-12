@@ -2,8 +2,7 @@
 {
     public interface ICommandResult
     {
-        public bool IsSuccess { get; }
-        public bool IsFailure { get; }
+        public bool IsSuccess { get; set; }
         public object Result { get; set; }
         
     }

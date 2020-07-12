@@ -20,13 +20,11 @@ namespace BeerAPI.Models.Entities
         public string City { get; set; }
         [MaxLength(9)]
         public string ZipCode { get; set; }
-        [ForeignKey("BeerId")]
-        public List<Beer> Beers { get; set; }
         [Required]
         [MaxLength(50)]
         public string CreatedBy { get; set; }
         public DateTime CreatedDate { get; set; }
         public string ModifiedBy { get; set; }
-        public DateTime ModifiedDate { get; set; }
+        public DateTime? ModifiedDate { get; set; }
     }
 }

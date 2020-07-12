@@ -1,4 +1,6 @@
 ﻿using System.Collections.Generic;
+using BeerAPI.Commands.Brewery;
+using Microsoft.AspNetCore.Mvc;
 
 namespace BeerAPI.Models.FormModels
 {
@@ -11,5 +13,7 @@ namespace BeerAPI.Models.FormModels
         public string StateAbbr { get; set; }
         public string ZipCode { get; set; }
         public List<Beer> Beers { get; set; }
-        public string CreatedBy { get; set; }    }
+        public string CreatedBy { get; set; }
+        public string ModifiedBy { get; set; }
+    }
 }

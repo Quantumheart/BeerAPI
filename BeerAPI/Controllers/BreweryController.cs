@@ -1,5 +1,6 @@
 ﻿using System.Threading.Tasks;
 using BeerAPI.Commands.Brewery;
+using BeerAPI.Models.FormModels;
 using BeerAPI.Queries.BreweryQueries;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
@@ -24,19 +25,20 @@ namespace BeerAPI.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetBrewery(int id)
         {
-            var query = new GetBreweryQuery() {Id = id};
-            return Ok(await Mediator.Send(query));
+            return Ok(await Mediator.Send(new GetBreweryQuery() {Id = id}));
         }
         
         [HttpPost]
-        public async Task<IActionResult> CreateBrewery([FromBody] CreateBreweryCommand command)
+        public async Task<IActionResult> CreateBrewery([FromBody] AddOrUpdateBreweryForm form)
         {
+            var command = new CreateBreweryCommand(form, ModelState);
             return Ok(await Mediator.Send(command));
         }
 
-        [HttpDelete]
-        public async Task<IActionResult> DeleteBrewery([FromBody] DeleteBreweryCommand command)
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteBrewery(int id)
         {
+            var command = new DeleteBreweryCommand() {Id = id};
             return Ok(await Mediator.Send(command));
         }
     }
