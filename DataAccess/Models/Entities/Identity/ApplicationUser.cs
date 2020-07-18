@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace BeerAPI.Models.Entities.Identity
+namespace DataAccess.Models.Entities.Identity
 {
     public class ApplicationUser 
     {

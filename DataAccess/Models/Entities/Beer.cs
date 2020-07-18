@@ -1,9 +1,8 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using BeerAPI.Models.Entities;
 
-namespace BeerAPI.Models
+namespace DataAccess.Models.Entities
 {
     public class Beer : BaseEntity
     {

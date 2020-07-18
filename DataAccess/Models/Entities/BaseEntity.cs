@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace BeerAPI.Models.Entities
+namespace DataAccess.Models.Entities
 {
     public abstract class BaseEntity
     {

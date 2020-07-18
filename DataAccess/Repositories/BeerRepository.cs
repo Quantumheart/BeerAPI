@@ -1,16 +1,16 @@
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
-using BeerAPI.Models;
+using DataAccess.Data;
+using DataAccess.Models.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace BeerAPI.Data
+namespace DataAccess.Repositories
 {
-    public class BeerRepo : IBeerRepo
+    public class BeerRepository : IBeerRepository
     {
         private readonly ApplicationDbContext _context;
 
-        public BeerRepo(ApplicationDbContext context)
+        public BeerRepository(ApplicationDbContext context)
         {
             _context = context;
         }

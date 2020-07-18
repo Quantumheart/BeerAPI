@@ -1,9 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
-using BeerAPI.Models;
 using DataAccess.Models.Entities;
 
-namespace BeerAPI.Repositories
+namespace DataAccess.Repositories
 {
     public interface IBreweryRepository
     {

@@ -1,10 +1,10 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using BeerAPI.Models;
+using DataAccess.Models.Entities;
 
-namespace BeerAPI.Data
+namespace DataAccess.Repositories
 {
-    public interface IBeerRepo
+    public interface IBeerRepository
     {
         Task<List<Beer>> GetAllBeers();
     }

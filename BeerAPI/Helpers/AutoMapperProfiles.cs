@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using BeerAPI.Models;
+using DataAccess.Models.Entities;
 
 namespace BeerAPI.Helpers
 {

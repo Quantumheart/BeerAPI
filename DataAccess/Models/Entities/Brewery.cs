@@ -1,9 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 
-namespace BeerAPI.Models.Entities
+namespace DataAccess.Models.Entities
 {
     public class Brewery : BaseEntity
     {

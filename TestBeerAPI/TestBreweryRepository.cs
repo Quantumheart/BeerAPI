@@ -1,8 +1,7 @@
 using System;
 using System.Linq;
-using BeerAPI.Data;
-using BeerAPI.Models;
-using BeerAPI.Models.Entities;
+using DataAccess.Data;
+using DataAccess.Models.Entities;
 using Microsoft.EntityFrameworkCore;
 using Xunit;
 

@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using BeerAPI.Data;
 using BeerAPI.Models;
+using DataAccess.Repositories;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BeerAPI.Controllers
@@ -11,9 +11,9 @@ namespace BeerAPI.Controllers
     [ApiController]
     public class BeerController : Controller
     {
-        private readonly IBeerRepo _repository;
+        private readonly IBeerRepository _repository;
 
-        public BeerController(IBeerRepo repository)
+        public BeerController(IBeerRepository repository)
         {
             _repository = repository;
         }

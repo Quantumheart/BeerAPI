@@ -1,13 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Threading.Tasks;
-using BeerAPI.Models;
-using BeerAPI.Models.Entities;
+using DataAccess.Models.Entities;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-namespace BeerAPI.Data
+namespace DataAccess.Data
 {
     public class ApplicationDbContext : IdentityDbContext, IApplicationDbContext
     {

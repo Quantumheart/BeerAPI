@@ -1,12 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using BeerAPI.Models;
 using DataAccess.Data;
 using DataAccess.Models.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace BeerAPI.Repositories
+namespace DataAccess.Repositories
 {
     public class BreweryRepository : IBreweryRepository
     {
