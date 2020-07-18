@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
-using BeerAPI.Commands.Brewery;
-using Microsoft.AspNetCore.Mvc;
+using DataAccess.Models.Entities;
 
 namespace BeerAPI.Models.FormModels
 {

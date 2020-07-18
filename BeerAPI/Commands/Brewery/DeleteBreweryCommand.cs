@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading;
 using System.Threading.Tasks;
-using BeerAPI.Data;
+using DataAccess.Data;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 

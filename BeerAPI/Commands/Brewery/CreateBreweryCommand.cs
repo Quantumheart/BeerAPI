@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Threading;
 using System.Threading.Tasks;
-using BeerAPI.Data;
 using BeerAPI.Models.FormModels;
+using DataAccess.Data;
 using MediatR;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 using Microsoft.EntityFrameworkCore;
 
@@ -56,7 +55,7 @@ namespace BeerAPI.Commands.Brewery
             {
                 try
                 {
-                    var brewery = new Models.Entities.Brewery
+                    var brewery = new DataAccess.Models.Entities.Brewery
                     {
                         BreweryName = commandEditor.BreweryName,
                         MasterBrewer = commandEditor.MasterBrewer,

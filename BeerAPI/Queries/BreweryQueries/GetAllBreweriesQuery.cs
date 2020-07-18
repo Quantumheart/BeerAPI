@@ -1,9 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
-using BeerAPI.Data;
-using BeerAPI.Models;
-using BeerAPI.Models.Entities;
+using DataAccess.Data;
+using DataAccess.Models.Entities;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 
